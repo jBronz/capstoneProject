@@ -8,6 +8,7 @@ function App() {
   const [statementTranslation, startTrans] = useState([]);
   const[endLanguage, secondLang] = useState([]);
   const[endTranslation, secondTrans] = useState([]);
+  const langs = {"de":"German"};
 ;  useEffect(()=> {
     alanBtn({
       key: alanKey,
