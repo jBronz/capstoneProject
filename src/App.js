@@ -1,19 +1,27 @@
-import React, {useEffect} from 'react';
+import React, {useState,useEffect} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import alanBtn from '@alan-ai/alan-sdk-web';
 
 const alanKey = '6947ae0effb1401bcafdcca39b0351bb2e956eca572e1d8b807a3e2338fdd0dc/stage';
 function App() {
-  useEffect(()=> {
+  const [statementTranslation, startTrans] = useState([]);
+  const[endLanguage, secondLang] = useState([]);
+  const[endTranslation, secondTrans] = useState([]);
+;  useEffect(()=> {
     alanBtn({
       key: alanKey,
-      onCommand: ({command}) => {
+      onCommand: ({command, text, response,lang}) => {
         if(command === 'testCommand') {
             alert('This code works');
 
         }
-
+        if(command ==='sendData'){
+          startTrans(text);
+          secondLang(lang);
+          secondTrans(response.translated);
+          console.log(response);
+        }
       }
 
     })
@@ -22,16 +30,14 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          To Start Translation Click Button
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
+        <a>
+          {statementTranslation}
+        </a>
+        <a>
+          {endLanguage}
+        </a>
+        <a>
+          {endTranslation}
         </a>
       </header>
     </div>
