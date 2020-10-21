@@ -19,7 +19,14 @@ function App() {
         }
         if(command ==='sendData'){
           startTrans(text);
-          secondLang(lang);
+          switch(lang){
+            case "de":
+              secondLang("German");
+              break;
+              case "fr":
+                secondLang("French");
+                break;
+          }
           secondTrans(response.translated);
           console.log(response);
         }
