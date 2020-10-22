@@ -30,16 +30,27 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <a>
+      </header>
+      <body>
+    <div id="root"></div>
+    <section>
+			<article id="english-box">
+        <a class="cardText">
           {statementTranslation}
         </a>
-        <a>
-          {endLanguage}
-        </a>
-        <a>
-          {endTranslation}
-        </a>
-      </header>
+				<p>English (Default Language)</p>
+			</article>
+			<article id="spanish-box">
+				<p id="languages">
+        {endLanguage}
+				</p>
+        <p class ="translated" >{endTranslation}</p>
+      </article>    
+		</section>
+		<footer>
+			<p>Copyright &copy; 2020 All rights reserved</p>
+		</footer>
+  </body>
     </div>
   );
 }

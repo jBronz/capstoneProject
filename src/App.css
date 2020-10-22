@@ -75,7 +75,20 @@ body {
     padding: 30px;
     text-align: right;
 }
-
+.cardText{
+  margin: auto;
+  font-size: 40px;
+}
+.translated{
+  color:#63BACD;
+  padding-top: 10%;
+  margin: auto;
+  font-size: 40px;
+}
+.alanBtn-root{
+  right: 41% !important;
+  bottom: 68px !important;
+}
 #languages{
 color:#63BACD;
 border: none;
