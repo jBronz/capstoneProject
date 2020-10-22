@@ -13,32 +13,15 @@ function App() {
 ;  useEffect(()=> {
     alanBtn({
       key: alanKey,
-      onCommand: ({command, text, response,lang}) => {
+      onCommand: ({command, text, response,tranLang}) => {
         if(command === 'testCommand') {
             alert('This code works');
             
         }
         if(command ==='sendData'){
           startTrans(text);
-          switch(lang){
-            case "de":
-              secondLang("German");
-              break;
-              case "fr":
-                secondLang("French");
-                break;
-                case "ru":
-                  secondLang("Russian");
-                break;
-                case "es":
-                  secondLang("Spanish");
-                break;
-                case "en":
-                  secondLang("English");
-                break;
-          }
+          secondLang(tranLang);
           secondTrans(response.translated);
-          console.log(response);
         }
       }
 
