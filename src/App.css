@@ -1,3 +1,4 @@
+/*
 .App {
   text-align: center;
 }
@@ -36,3 +37,70 @@
     transform: rotate(360deg);
   }
 }
+*/
+
+/* Desktop */
+
+*{
+	margin: 0;
+  padding: 0;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+  	background-color: #FFF;
+  	height: 100vh;
+  	margin: 0 auto;
+}
+
+#english-box{
+  	height: 47vh; 
+  	background-color:#63BACD;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-top: 300px;
+    padding: 30px;
+    color: #FFF;
+    font-weight: bold;
+    display: flex;
+   
+}
+
+#english-box p{
+  display: flex;
+  align-items: flex-end;
+}
+
+#spanish-box{
+  	height: 47vh; 
+    padding: 30px;
+    text-align: right;
+}
+
+#languages{
+color:#63BACD;
+border: none;
+font-size: 16px;
+font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  font-size: 12px;
+}
+
+/* Tablet */
+@media screen and (max-width: 992px) {
+  body {
+    background-color: #FFF;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 600px) {
+  body {
+    background-color: #FFF;
+  }
+
+  
+}
+
