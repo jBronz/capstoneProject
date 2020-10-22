@@ -31,11 +31,11 @@ function App() {
     <div className="App">
       <header className="App-header">
       </header>
-      <body>
+    <div>
     <div id="root"></div>
     <section>
 			<article id="english-box">
-        <a class="cardText">
+        <a className="cardText">
           {statementTranslation}
         </a>
 				<p>English (Default Language)</p>
@@ -44,13 +44,13 @@ function App() {
 				<p id="languages">
         {endLanguage}
 				</p>
-        <p class ="translated" >{endTranslation}</p>
+        <p className ="translated" >{endTranslation}</p>
       </article>    
 		</section>
 		<footer>
 			<p>Copyright &copy; 2020 All rights reserved</p>
 		</footer>
-  </body>
+  </div>
     </div>
   );
 }
