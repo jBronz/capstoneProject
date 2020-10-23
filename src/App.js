@@ -38,7 +38,7 @@ function App() {
         <a className="cardText">
           {statementTranslation}
         </a>
-				<p>English (Default Language)</p>
+				<p className="defaultLang">English (Default Language)</p>
 			</article>
 			<article id="spanish-box">
 				<p id="languages">
