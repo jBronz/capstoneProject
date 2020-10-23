@@ -50,8 +50,8 @@ function App() {
 		<footer>
 			<p>Copyright &copy; 2020 All rights reserved</p>
 		</footer>
+  </div>    
   </div>
-    </div>
   );
 }
 
