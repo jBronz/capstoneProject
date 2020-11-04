@@ -62,12 +62,13 @@ body {
     color: #FFF;
     font-weight: bold;
     display: flex;
-   
 }
 
 #english-box p{
   display: flex;
   align-items: flex-end;
+  font-size: 18px ;
+  margin-bottom: 20px;
 }
 
 #spanish-box{
@@ -78,15 +79,18 @@ body {
 .cardText{
   margin: auto;
   font-size: 40px;
+  /*text-align: left;*/
 }
 .translated{
   color:#63BACD;
   padding-top: 10%;
   margin: auto;
   font-size: 40px;
+  text-align: right;
+  font-weight: bold;
 }
 .alanBtn-root{
-  right: 41% !important;
+  right: 47% !important;
   bottom: 68px !important;
 }
 .defaultLang{
@@ -97,13 +101,14 @@ body {
 #languages{
 color:#63BACD;
 border: none;
-font-size: 16px;
+font-size: 19px;
 font-weight: bold;
 }
 
 footer {
   text-align: center;
   font-size: 12px;
+  color: #cbcbcb;
 }
 
 /* Tablet */
