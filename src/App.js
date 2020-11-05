@@ -14,15 +14,18 @@ function App() {
     alanBtn({
       key: alanKey,
       onCommand: ({command, text, response,tranLang}) => {
-        if(command === 'testCommand') {
-            alert('This code works');
-            
-        }
         if(command ==='sendData'){
           startTrans(text);
           secondLang(tranLang);
           secondTrans(response.translated);
         }
+          if(command ==='sendPhrase'){
+            startTrans(text);
+          }
+          if(command ==='sendLang'){
+            secondLang(tranLang);
+            console.log(endLanguage);
+          }
       }
 
     })
