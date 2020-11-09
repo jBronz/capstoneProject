@@ -33,6 +33,9 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+      <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+      </style>
       </header>
     <div>
     <div id="root"></div>
