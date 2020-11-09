@@ -90,7 +90,7 @@ body {
   font-weight: bold;
 }
 .alanBtn-root{
-  right: 41% !important;
+  right: 48% !important;
   bottom: 68px !important;
 }
 .defaultLang{
@@ -116,6 +116,10 @@ footer {
   body {
     background-color: #FFF;
   }
+  .alanBtn-root{
+    right: 41% !important;
+    bottom: 68px !important;
+  }
 }
 
 /* Mobile */
@@ -123,7 +127,10 @@ footer {
   body {
     background-color: #FFF;
   }
-
+  .alanBtn-root{
+    right: 41% !important;
+    bottom: 68px !important;
+  }
   
 }
 
