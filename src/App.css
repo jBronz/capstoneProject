@@ -35,6 +35,7 @@ body {
   	height: 47vh; 
     padding: 30px;
     text-align: right;
+    
 }
 .cardText{
   margin: auto;
@@ -47,6 +48,7 @@ body {
   font-size: 40px;
   text-align: right;
   font-weight: normal;
+  padding-top: 40px;
 }
 .alanBtn-root{
   right: 48% !important;
